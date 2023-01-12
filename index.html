@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="Imagenes/Logo_page.png" class="icono_pag" >
+
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body class="fondo">
+    
+    <header class="logo"><img src="Imagenes/Logo.png" alt=""></header>
+    
+    <main class="contenido">
+        
+        <div class="cuadros">
+
+            <section class="rectagulo-entrada">
+                <textarea id="textEncriptar" class="textoEntrada"  placeholder="Ingrese el texto aqui"></textarea>
+                <div class="alerta-mensaje">
+                    <img src="Imagenes/Vector.png">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="caja-botones">
+                    <button class="btnEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btnDescriptar" onclick="descripctar()">Desencriptar</button>
+                </div>
+            </section>
+            
+            <section class="rectangulo-respuesta">
+                <img src="Imagenes/Muñeco.png" alt="" id="imagen-munheco">
+                <div>
+                    <p class="msj-respuesta" id="msjResultado">Ningún mensaje fue encontrado</p>
+                    <textarea class="msj-respuesta2" id="resultado"  placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                    <button class="btn-copiar" id="btncopy" onclick="copiar()" hidden>Copiar</button>
+                </div>
+            </section>
+
+        </div> 
+        
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Bryan Gutiérrez D - 2022</p>
+    </footer>
+
+</body>
+
+<script src="funciones.js"></script>   
+
+</html>
